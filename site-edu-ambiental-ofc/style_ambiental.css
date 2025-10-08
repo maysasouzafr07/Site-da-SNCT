@@ -13,16 +13,13 @@ body {
 /* ====== Barra superior ====== */
 .barra-topo {
   width: 100%;
-  max-width: 110vw; /* garante que não ultrapasse a largura da tela */
-  box-sizing: border-box; /* inclui padding na largura total */
-  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 20px; /* padding menor e responsivo */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  overflow-x: hidden; /* remove qualquer rolagem horizontal */
-  margin: 0 auto; /* centraliza a barra */
+  padding: 15px 40px;
+  box-shadow: none;
+  background-color: #178d89;
+  /* remove sombra para integrar melhor */
 }
 
 
@@ -30,7 +27,9 @@ body {
   font-size: 1.1rem;
   margin: 0;
   font-weight: 600;
-  
+  margin-right: 75px;
+  color: #ffffff;
+
 }
 
 .barra-topo .titulo span {
@@ -42,7 +41,8 @@ body {
 .botoes-topo {
   display: flex;
   gap: 15px;
-  margin: 0;
+  margin-right: 80px;
+  text-shadow: 2px 2px 5px rgb(17, 46, 66);
 }
 
 .botao {
@@ -57,7 +57,8 @@ body {
 }
 
 .botao:hover {
-  background-color: rgba(7, 87, 87, 0.15);  
+  background-color: rgba(7, 87, 87, 0.15); 
+  color: #fff 
 }
 
 /* ====== Conteúdo geral ====== */
@@ -135,10 +136,11 @@ body {
 
 /* ======== RESPONSIVO ======== */
 @media (max-width: 900px) {
-  /* Barra do topo */
+ /* Barra topo já ajustada */
   .barra-topo {
     flex-direction: column;
-    text-align: left;
+    align-items: center;
+    text-align: center;
     gap: 10px;
     padding: 15px 20px;
   }
@@ -149,9 +151,16 @@ body {
   }
 
   .botoes-topo {
-    margin-right: 0;
+    margin: 0;
     gap: 10px;
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .botao {
+    padding: 8px 12px;
+    font-size: 0.9rem;
   }
 
   /* Conteúdo principal */
