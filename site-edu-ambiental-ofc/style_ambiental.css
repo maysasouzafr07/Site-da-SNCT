@@ -11,7 +11,7 @@ body {
 
 /* ====== Barra superior ====== */
 .barra-topo {
-  width: 100%;
+  width: 105%;
   max-width: 100vw; /* garante que não ultrapasse a largura da tela */
   box-sizing: border-box; /* inclui padding na largura total */
   background-color: rgba(0, 0, 0, 0.4);
