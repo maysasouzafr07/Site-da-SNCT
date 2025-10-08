@@ -1,12 +1,13 @@
 /* ====== Fundo geral ====== */
 body {
   margin: 0;
+  padding: 0;
+   box-sizing: border-box;
   font-family: 'Times New Roman', Times, serif;
   background: linear-gradient(to bottom, #1db9b4, #0b1a3b);
   color: #fff;
   line-height: 1.6;
-  overflow-x: hidden;
-  box-sizing: border-box;
+   min-height: 100vh;
 }
 
 /* ====== Barra superior ====== */
